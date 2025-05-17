@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.gallery a img {
+  height: 200px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Link styles */
+a {
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* --- Lightbox arrow and close button tweaks --- */
+/* Okları biraz büyütelim ve rengini açalım */
+.lb-prev, .lb-next {
+  width: 60px !important;
+  height: 60px !important;
+  top: 50% !important;
+  margin-top: -30px !important;
+  background-size: 30px 30px !important;
+  opacity: 0.85 !important;
+  transition: opacity 0.3s ease;
+}
+
+.lb-prev:hover, .lb-next:hover {
+  opacity: 1 !important;
+}
+
+/* Kapatma X butonunu büyütüp koyu yapalım */
+.lb-close {
+  width: 40px !important;
+  height: 40px !important;
+  background-size: 28px 28px !important;
+  top: 15px !important;
+  right: 15px !important;
+  opacity: 0.85 !important;
+  transition: opacity 0.3s ease;
+}
+
+.lb-close:hover {
+  opacity: 1 !important;
+}
